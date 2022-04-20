@@ -3,10 +3,8 @@
 
 - NodeJS    
 [v16.x](https://nodejs.org/dist/latest-v16.x/)
-- Angular Cli    
-```bash
-npm install -g @angular/cli
-```
+- [Angular](https://tdtc-hrb.github.io/cnblogs/post/js-angular-app/)
+
 
 ## Deploy
 ```bash
@@ -62,5 +60,4 @@ Note: The server (java version) does not implement post!
 - [Angular HTTP Data Fetch](https://errorsea.com/angular-http-data-fetch/)
 - [An unhandled exception occurred: cannot find module '@angular-devkit/build-angular/package.json'](https://quizdeveloper.com/faq/resolved-an-unhandled-exception-occurred-cannot-find-module-angular-devkitb-aid62)
 - [nodejs 17: digital envelope routines::unsupported](https://github.com/webpack/webpack/issues/14532)
-
 
