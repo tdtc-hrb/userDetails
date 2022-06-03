@@ -14,16 +14,22 @@ npm install --save-dev
 npm audit fix
 ```
 
-Run:
+### Run
+Note: The java version of the server[demo-jpa-spring-boot2-mysql](https://github.com/xiaobin80/demo-jpa-spring-boot2-mysql)) does not implement post!
+
 - For dotnet
 ```bash
 ng serve --port 4260 --open
 ```
-- For java
+- For java    
+Change as follows: user.service.ts
+```
+return  this.http.get<UserModel[]>(this.url_java);
+```
+Then execute:    
 ```bash
 ng serve --port 4200 --open
 ```
-Note: The server (java version) does not implement post!
 
 
 ## Reference
