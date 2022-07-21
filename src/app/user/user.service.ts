@@ -16,7 +16,7 @@ export class UserService {
     constructor(private http : HttpClient) { }
 
     getUsers(): Observable<UserModel[]> {
-        return  this.http.get<UserModel[]>(this.url_dotnet);
+        return  this.http.get<UserModel[]>(this.url_java);
     }
 
     postUser(userModel: UserModel): Observable<any> {
