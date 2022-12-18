@@ -15,7 +15,7 @@ npm audit fix
 ```
 
 ### Run
-Note: The java version of the server[demo-jpa-spring-boot2-mysql](https://github.com/xiaobin80/demo-jpa-spring-boot2-mysql)) does not implement post!
+Note: The java version of the server[demo-jpa-spring-boot2-mysql](https://github.com/xiaobin80/demo-jpa-spring-boot2-mysql) does not implement post!
 
 - For dotnet
 ```bash
