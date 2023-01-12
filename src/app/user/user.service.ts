@@ -9,14 +9,14 @@ import { UserModel } from './user.model'
 })
 export class UserService {
     // use userDetail-server
-    url_dotnet = "https://localhost:7294/api/UserDetails";
+    url_dotnet = "https://192.168.1.3:7294/api/UserDetails";
     // use demo-jpa-spring-boot2-mysql 
-    url_java = "http://localhost:8080/user/list";
+    url_java = "http://192.168.1.3:8080/user/list";
 
     constructor(private http : HttpClient) { }
 
     getUsers(): Observable<UserModel[]> {
-        return  this.http.get<UserModel[]>(this.url_java);
+        return  this.http.get<UserModel[]>(this.url_dotnet);
     }
 
     postUser(userModel: UserModel): Observable<any> {
