@@ -1,8 +1,8 @@
 # UserDetailsClient
 ![chrome shot](https://gitee.com/xiaobin80/cnblogs/raw/master/images/UserDetailsClient-static.png)
 
-- NodeJS [v18.x](https://nodejs.org/dist/latest-v18.x/)
-- [Angular](https://tdtc-hrb.github.io/cnblogs/post/js-angular-app/)
+- [Node.js v20.x](https://nodejs.org/dist/latest-v20.x/)
+- [create app using Angular](https://tdtc-hrb.github.io/cnblogs/post/js-angular-app/)
 
 
 ## Deploy
