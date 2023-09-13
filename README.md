@@ -17,6 +17,10 @@ npm audit fix
 ### Run
 Note: The java version of the server[demo-jpa-spring-boot2-mysql](https://github.com/xiaobin80/demo-jpa-spring-boot2-mysql) does not implement post!
 
+first:    
+[web browser](https://<server-ip>:7294/api/UserDetails)
+
+afterwards:    
 - For dotnet
 ```bash
 ng serve --port 4260 --open
