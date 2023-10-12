@@ -14,6 +14,12 @@ npm install --save-dev
 npm audit fix
 ```
 
+### For china
+Network  acceleration:
+```
+npm i -g mirror-config-china --registry=https://registry.npm.taobao.org
+```
+
 ### Run
 Note: The java version of the server[demo-jpa-spring-boot2-mysql](https://github.com/xiaobin80/demo-jpa-spring-boot2-mysql) does not implement post!
 
