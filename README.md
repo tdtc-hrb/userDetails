@@ -28,66 +28,17 @@ cd ..
 npx @angular/cli new client --no-standalone --style=css --routing=false --skip-tests
 ```
 
-### reconfig
-- angular.json
-- index.html
-- main.ts
-
-#### outputPath
-> angular.json
-
-change the 
-```
-dist/client
-``` 
-to 
-```
-../AppWrap/www
-```
-
-#### import cordova
-- Add the statement that connects your Angular project to Cordova
+### connects your Angular project to Cordova
 > index.html
 ```
 <script type="text/javascript" src="cordova.js"></script>
-```
-
-#### deviceready function
-- Add the Cordova deviceready function
-> main.ts
-```
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
-import { AppModule } from './app/app.module';
-
-import isCordova from './isCordova';
-
-const bootstrap = () => {
-	platformBrowserDynamic().bootstrapModule(AppModule, {
-	  ngZoneEventCoalescing: true
-	})
-	  .catch(err => console.error(err));
-};
-if (isCordova()) {
-  document.addEventListener(
-    "deviceready",
-    () => {
-      bootstrap();
-    },
-    false
-  );
-} else {
-  bootstrap();
-}
-
 ```
 
 ## run
 - Gen Angular dist files
 ```
 cd client
-ng build --base-href=./
-cd ..
+ng build --output-path=../AppWrap/www --base-href=./
 ```
 
 ### verify
